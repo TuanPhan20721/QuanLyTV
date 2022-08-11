@@ -1,0 +1,12 @@
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.csproj.AssemblyReference.cache
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.Properties.Resources.resources
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.csproj.GenerateResource.cache
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.csproj.CoreCompileInputs.cache
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\bin\Debug\QuanLyTV.exe.config
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\bin\Debug\QuanLyTV.exe
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\bin\Debug\QuanLyTV.pdb
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.exe
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.pdb
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.Menu.resources
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.QuanLyDocGia.resources
+C:\Users\tuanp\OneDrive\Máy tính\QuanLyTV\QuanLyTV\obj\Debug\QuanLyTV.QuanLySach.resources
