@@ -88,9 +88,7 @@ insert into docGia values
 ('dg02','Phan Thi B','14/05/2001','213012312','31321312','TPHCM','mt02'),
 ('dg03','Phan Thi C','14/05/2001','213012312','31321312','TPHCM','mt02')
 
-select * from sach
-update sach set tensach='HQT' where masach='ms01'
-go
+---------- Phan Văn Tuấn - 2001190919
 -- tạo thủ tục lấy ra thông tin bảng Sách
 CREATE proc Select_Sach 
 AS 
@@ -100,6 +98,7 @@ BEGIN
 END;
 EXEC Select_Sach;
 -- tạo thủ tục thêm thông tin sách
+go
 create proc Insert_sach
 @masach char(10),@tensach nvarchar(30),
 @loaisach nvarchar(30),@tenTG nvarchar(30),
@@ -107,3 +106,36 @@ create proc Insert_sach
 AS
 	insert into sach(masach,tensach,loaisach,tenTG,nhaXB,namXB)
 	values (@masach,@tensach,@loaisach,@tenTG,@nhaXB,@namXB)
+go
+-- tạo thủ tục xóa sách
+create proc delete_sach
+@masach char(10)
+as
+begin 
+delete from sach
+where masach = @masach 
+end
+go
+-- tạo thủ tục cập nhật thông tin sách
+create proc Update_sach
+@masach char(10),@tensach nvarchar(30),
+@loaisach nvarchar(30),@tenTG nvarchar(30),
+@nhaXB nvarchar(30),@namXB nvarchar(30)
+as
+begin
+UPDATE sach
+set masach=@masach,tensach=@tensach,loaisach=@loaisach,
+    tenTG=@tenTG,nhaXB=@nhaXB,namXB=@namXB
+WHERE masach = @masach
+END 
+go
+-- tạo thủ tục tìm kiếm sách
+create proc search_sach 
+@tensach nvarchar(30),@loaisach nvarchar(30),
+@masach nvarchar(30),@tenTG nvarchar(30),
+@namXB nvarchar(30),@nhaXB nvarchar(30)
+as
+	select * from sach
+	where tensach like '%' +@tensach+'%' or loaisach like '%' +@loaisach+'%' or
+	masach like '%' +@masach+'%' or tenTG like '%' +@tenTG+'%' or
+	nhaXB like '%' +@nhaXB+'%' or namXB like '%' +@namXB +'%'
